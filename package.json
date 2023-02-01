@@ -2,7 +2,7 @@
   "name": "budget-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ucan2022.github.io/SmartBudgetApp",
+  "homepage": "https://Ucan2022.github.io/Budget-app",
   "dependencies": {
     "-": "^0.0.1",
     "@chakra-ui/icons": "^2.0.17",
@@ -13,7 +13,6 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^8.4.3",
-    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -47,6 +46,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages":"^2.1.1"
+    "gh-pages": "^5.0.0"
   }
 }
