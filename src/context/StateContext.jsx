@@ -195,7 +195,7 @@ setDeleteitem(true);
     }
     else{
        toast({
-          title: 'Remainder set',
+          title: 'Remainder Set',
           status: 'success',
           duration: 2000,
           isClosable: true,
