@@ -9,7 +9,7 @@ import { CheckIcon,DeleteIcon,AddIcon } from '@chakra-ui/icons'
 const Notes = ({showMe,showButton}) => {
      // eslint-disable-next-line no-unused-vars
      const{handleRemainder,rinput,setRinput,todo,setRcategory,handleDone,rcategory,openRemDelete,
-        setOpenRemDelete,deleteeachnote,rtext,setRtext,isOpen,showform,showNotes,DisplayNoteForm,setIsOpen,addamount,DeleteNotes}=useStateContext();
+        setOpenRemDelete,deleteeachnote,rtext,setRtext,isOpen,showform,showNotes,indexes,DisplayNoteForm,setIsOpen,addamount,DeleteNotes}=useStateContext();
 function onClose(){
     setIsOpen(false);
   }
@@ -91,7 +91,7 @@ function onClose(){
                       <Button colorScheme="teal" mr={3} onClick={()=>setIsOpen(false)}>
                         Close
                       </Button>
-                      <Button type="submit" colorScheme="teal" mr={3} onClick={() => addamount(ind)}>
+                      <Button type="submit" colorScheme="teal" mr={3} onClick={() => addamount(indexes)}>
                         Update
                       </Button>
                     </ModalFooter>

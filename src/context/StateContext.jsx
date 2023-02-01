@@ -77,12 +77,13 @@ else{
   const[alert,setAlert]=useState(true);
       const [isOpens,setIsOpens]=useState(false);
 const [deleteitem,setDeleteitem]=useState(false);
-const[ind,setInd]=useState();
+const[indexes,setIndexes]=useState();
 const [openRemDelete,setOpenRemDelete]=useState(false);
 const[remind,setRemind]=useState();
 const [showNotes,setShowNotes]=useState(true);
 const [showform,setShowform]=useState(false);
 const [showButton,setShowButton]=useState(true);
+const[ind,setInd]=useState();
   // eslint-disable-next-line no-unused-vars
   const handleClick = () => {
     setShowLogin(true);
@@ -100,15 +101,15 @@ const [showButton,setShowButton]=useState(true);
   }
 
   const MainPage=()=>{
- setShowButton(true);
     setShowform(false);
+    setShowButton(true);
     setShowNotes(true);  
   }
   const handleSubmit = () => {
     if (parseInt(income) === 0) {
       alert("add income");
     }
-    else if(input==='' || text===''){
+    if(input===''){
        toast({
           title: 'Missing Values',
           status: 'error',
@@ -117,7 +118,7 @@ const [showButton,setShowButton]=useState(true);
            width: '1000px',
       maxWidth: '100%',
       height:'120px',
-          position: 'Bottom',
+          position: 'top',
         })
     }
     else {
@@ -180,6 +181,7 @@ setDeleteitem(true);
 }
   const handleRemainder=()=>{
     if(rtext===''){
+      console.log("nkjn");
       toast({
           title: 'Missing Values',
           status: 'error',
@@ -188,7 +190,7 @@ setDeleteitem(true);
            width: '1000px',
       maxWidth: '100%',
       height:'120px',
-          position: 'Bottom',
+          position: 'top',
         })
     }
     else{
@@ -207,6 +209,7 @@ setDeleteitem(true);
      setRcategory('');
      setShowform(false);
      setShowNotes(true);
+     setShowButton(true);
     }
  
     }
@@ -214,7 +217,7 @@ setDeleteitem(true);
 
 const handleDone=(index)=>{
 setIsOpen(true);
-
+setIndexes(index);
 }
 
 const addamount=(index)=>{
@@ -296,7 +299,8 @@ useEffect(()=>{
         showNotes,
         DisplayNoteForm,
         showButton,
-        MainPage
+        MainPage,
+        indexes
         }}>
       {children}
     </Context.Provider>
