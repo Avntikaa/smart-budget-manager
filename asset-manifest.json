@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/smart-budget-manager/static/css/main.f908828d.css",
+    "main.js": "/smart-budget-manager/static/js/main.6ce0fe00.js",
+    "index.html": "/smart-budget-manager/index.html",
+    "main.f908828d.css.map": "/smart-budget-manager/static/css/main.f908828d.css.map",
+    "main.6ce0fe00.js.map": "/smart-budget-manager/static/js/main.6ce0fe00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f908828d.css",
+    "static/js/main.6ce0fe00.js"
+  ]
+}
